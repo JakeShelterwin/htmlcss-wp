@@ -15,6 +15,7 @@
 body{
   background-image: url(img/sfondo.png);
   background-size: repeat;
+  color:#666666;
 }
 
 .container{
@@ -23,7 +24,7 @@ body{
   text-align: center;
   /* background-color: red; */
   margin-top: 23.5px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   position: relative;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -79,7 +80,7 @@ nav {
 
 .barraNavigazione {
   display: inline-block;
-  position:relative;
+  position: relative;
   float: left;
   text-align: center;
   top: 50%;
@@ -92,12 +93,12 @@ nav {
   float: left;
 }
 
-.effettoOver:hover{
-  background-color: #2f2b28;
-}
-
+/* Suggerito da Michele, quando faccio over sulla classe "effettoOver" seleziona anche .itemNav
+Selezione gli alementi itemNav che sono figli dell'elemento effettoOver:hover  */
 .effettoOver:hover .itemNav{
+  /* color si applica al link di itemNav, se non lo seleziono direttamente non si applica */
   color: white;
+  background-color: #2f2b28;
 }
 
 .itemNav{
@@ -208,15 +209,19 @@ h2 {
 /* *******************************+** *//* ****************************+** */
 
 footer{
+  /* linee debug */
     border: 5px solid snow;
+  /* fine debug */
+  background-color: white;
+  padding: 23px;
 }
 
 /* PRIMA RIGA FOOTER */
 .risorseEWidgets{
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
-  background-color: lightblue;
-
+  /* background-color: lightblue; */
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
 }
 
 /* assegno al contenitore di elementi Float "clearfix" così che non collassi */
@@ -227,11 +232,11 @@ footer{
 }
 
 .utilities{
-  height: 90px;
-  width: 60%;
-  background-color: orange;
+  /* height: 90px; */
+  width: 59%;
+  /* background-color: orange; */
   float: left;
-  margin: 4px;
+  /* margin: 4px; */
 }
 
 /* assegno al contenitore di elementi Float "clearfix" così che non collassi */
@@ -241,30 +246,59 @@ footer{
   clear:both;
 }
 
-.risorsa{
-  height: 85%;
-  width: 25%;
-  background-color: lavender;
+.recentPosts {
+  width: 40%;
   float: left;
-  border: 1px solid yellow;
-  margin: 5px;
+  text-align: left;
+}
+
+.recentComments{
+  width: 38%;
+  float: left;
+  text-align: left;
+}
+
+.categories{
+  width: 20%;
+  float: left;
+  text-align: left;
+}
+
+.utilities ul{
+  color: #9b9b9b;
+  padding-left: 0.7vw;
+  padding-bottom: 0.7vh;
+}
+
+.utilities ul li{
+  padding-top: 0.7vh;
+  padding-bottom: 0.5vh;
+  width: 85%;
 }
 
 .widgets{
-  height: 90px;
-  width: 30%;
+  /* height: 90px;
   background-color: lime;
-  float: left;
   border: 1px red solid;
-  margin: 5px;
+  margin: 5px;*/
+  width: 39%;
+  float: right;
+  padding-right: 1vw;
+  text-align: left;
+}
+
+.testoWidget{
+  padding-top: 15px;
+  color: gray;
+
 }
 
 /* SECONDA RIGA FOOTER */
 .creditiESocial{
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
-  background-color: violet;
-  margin-bottom: 20px;
+  /* background-color: violet; */
+  /* margin-bottom: 20px; */
 }
 
 /* assegno al contenitore di elementi Float "clearfix" così che non collassi */
@@ -275,17 +309,31 @@ footer{
 }
 
 .crediti {
-  height: 90px;
+  /* height: 90px;
   width: 45%;
-  background-color: white;
+  background-color: white; */
   float: left;
   margin: 5px;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 3.9vh;
+  margin-bottom: 3.9vh;
+  margin-left: 3vw;
+}
+
+.crediti span{
+  color: #9b9b9b;
 }
 
 .social {
-  height: 90px;
+  /* start debug */
+  /* height: 90px;
   width: 45%;
-  background-color: LightSkyBlue;
-  float: left;
-  margin: 5px;
+  background-color: LightSkyBlue;*/
+  /* end debug */
+  float: right;
+  margin-top: 3.9vh;
+  margin-bottom: 3.9vh;
+  margin-right: 5vw;
+  font-size: 25px;
 }
