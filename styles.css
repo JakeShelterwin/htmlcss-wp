@@ -21,7 +21,6 @@ body{
 .container{
   width: 78%;
   left: 11%;
-  text-align: center;
   /* background-color: red; */
   margin-top: 23.5px;
   /* margin-bottom: 20px; */
@@ -116,7 +115,9 @@ ul{
 }
 
 /* *******************************+** *//* ****************************+** */
+/* *******************************+** *//* ****************************+** */
 /* ************************CORPO SITO 3 COLONNE*****************+** */
+/* *******************************+** *//* ****************************+** */
 /* *******************************+** *//* ****************************+** */
 main{
   margin-top: 20px;
@@ -136,14 +137,15 @@ main:after {
 h2 {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
-
+/* *******************************+** *//* ****************************+** */
+/* ************************COLONNA ASIDE contiene pages archives e meta*****************+** */
+/* *******************************+** *//* ****************************+** */
 .colonnaASIDE{
-  width: 24%;
+  width: 25%;
   /* background-color: yellow; */
   float: left;
 }
 .colonnaASIDE h2 {
-  text-align: left;
   margin-left: 1vw;
   margin-top: 1vh;
 }
@@ -153,8 +155,7 @@ h2 {
   display: inline-block;
   width: 100%;
   background-color: white;
-  margin-bottom: 5px;
-  text-align: left;
+  margin-bottom: 25px;
   border-radius: 1.5px;
 }
 
@@ -163,13 +164,26 @@ h2 {
   margin-left: 1.5vw;
   margin-top: 0.5vh;
   margin-bottom: 1vw;
+  color: #99CC33;
 }
 
+.blocco ul li {
+  padding: 2vh;
+}
+
+/* *******************************+** *//* ****************************+** */
+/* ************************COLONNA ARTICOLI*****************+** */
+/* *******************************+** *//* ****************************+** */
 .colonnaArticoli{
-  width: 49%;
-  background-color: pink;
+  /* spessore totale 50% */
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  background-color: white;
   float: left;
-  margin: 0.5%;
+  border-radius: 1.5px;
+  /* aggiunge un po' di padding dopo il bordo dell'ultimo articolo */
+  padding-bottom: 5%;
 }
 
 /* assegno al contenitore di elementi Float "clearfix" così che non collassi */
@@ -182,18 +196,74 @@ h2 {
 /* questa classe gestisce gli articoli all'interno della colonnaArticoli */
 .articolo{
   display: inline-block;
-  height: 150px;
-  width: 90%;
-  background-color: brown;
-  margin: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.titoloArticolo{
+  font-size: 2em;
+  font-weight: 1000;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-bottom: 5px;
+}
+
+.metadataArticolo {
+  /* stesso padding left di titoloArticolo così viene allineato col titolo */
+  padding-left: 5%;
+  color: #999999;
+}
+
+.autore{
+  color: #99cc33;
+}
+
+.commenti {
+  display: inline-block;
+  color: #99cc33;
+  margin-bottom: 5%;
+}
+
+.immagineArticolo img {
+  width: 100%;
+}
+
+.testoArticolo{
+  line-height: 1.8;
+  font-size: 15px;
+  margin-top: 1vh;
+  margin-bottom: 1.5vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.fastLinksArticolo{
+  width: 90%;
+  background-color: #f9f9f9;
+  color: #999999;
+  padding: 8px;
+  /* per centrare */
+  margin: auto;
+  margin-bottom: 5vh;
+  border-radius: 1.5px;
+  font-size: 14px;
+}
+
+.fastLinksArticolo span{
+  color: #99cc33;
+}
+
+hr{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* *******************************+** *//* ****************************+** */
+/* ************************COLONNA SEARCH AND TAG*****************+** */
+/* *******************************+** *//* ****************************+** */
 .colonnaSearchTag{
-  height: 500px;
-  width: 24%;
+  width: 25%;
   background-color: lightblue;
   float: left;
-  margin: 0.5%;
+  border-radius: 1.5px;
 }
 
 .search, .ashtag{
@@ -214,6 +284,7 @@ footer{
   /* fine debug */
   background-color: white;
   padding: 23px;
+  line-height: 1.8;
 }
 
 /* PRIMA RIGA FOOTER */
@@ -249,19 +320,16 @@ footer{
 .recentPosts {
   width: 40%;
   float: left;
-  text-align: left;
 }
 
 .recentComments{
   width: 38%;
   float: left;
-  text-align: left;
 }
 
 .categories{
   width: 20%;
   float: left;
-  text-align: left;
 }
 
 .utilities ul{
@@ -284,7 +352,6 @@ footer{
   width: 39%;
   float: right;
   padding-right: 1vw;
-  text-align: left;
 }
 
 .testoWidget{
@@ -314,7 +381,6 @@ footer{
   background-color: white; */
   float: left;
   margin: 5px;
-  text-align: left;
   font-size: 12px;
   margin-top: 3.9vh;
   margin-bottom: 3.9vh;
