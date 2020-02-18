@@ -1,0 +1,291 @@
+/******************************************** *//* ************************************+** */
+/******************************************** *//* ************************************+** */
+/******************************************** *//* ************************************+** */
+/***BORDI COLORI E ALCUNI MARGIN SERVONO SOLO A VISUALIZZARE BENE CIASCUN BLOCCO PER NON CONFONDERSI *****/
+/*****************************************+** *//* ************************************+** */
+/******************************************** *//* ************************************+** */
+/******************************************** *//* ************************************+** */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(img/sfondo.png);
+  background-size: repeat;
+}
+
+.container{
+  width: 78%;
+  left: 11%;
+  text-align: center;
+  /* background-color: red; */
+  margin-top: 23.5px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* *******************************+** *//* ****************************+** */
+/* ************************TESTATA E BARRA NAVIGAZIONE*****************+** */
+/* *******************************+** *//* ****************************+** */
+
+/* imposto dimensione posizione e sfondo della testata ESCLUSA la barra nav */
+
+header {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.testata {
+  height: 220px;
+  width: 100%;
+  top: 2%;
+  background-image: url(img/testata.jpg);
+  background-size: cover;
+  position: relative;
+  border: 12px white solid;
+}
+
+/* nelle seguenti 3 classi gestisco la scritta sovraimposta all'immagine della testata */
+.testoSopraImmagine {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.testoSopraImmagine h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.sottoTesto{
+  text-align: center;
+  font-size: 25px;
+  margin: 6px;
+}
+
+/* BARRA DI NAVIGAZIONE */
+nav {
+  background-color: #4f4842;
+  height: 50px;
+  width: 100%;
+}
+
+.barraNavigazione {
+  display: inline-block;
+  position:relative;
+  float: left;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.effettoOver{
+  display: inline-block;
+  float: left;
+}
+
+.effettoOver:hover{
+  background-color: #2f2b28;
+}
+
+.effettoOver:hover .itemNav{
+  color: white;
+}
+
+.itemNav{
+  display: inline-block;
+  color: #cbc6c3;
+  font-size: 12px;
+  /* toglie l'underscore dei link */
+  text-decoration: none;
+  padding: 17.5px;
+  width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+/* *******************************+** *//* ****************************+** */
+/* ************************CORPO SITO 3 COLONNE*****************+** */
+/* *******************************+** *//* ****************************+** */
+main{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  /* background-color: lightgreen; */
+}
+
+
+/* assegno al contenitore di elementi Float "clearfix" così che non collassi */
+main:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+h2 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.colonnaASIDE{
+  width: 24%;
+  /* background-color: yellow; */
+  float: left;
+}
+.colonnaASIDE h2 {
+  text-align: left;
+  margin-left: 1vw;
+  margin-top: 1vh;
+}
+
+/* blocchi all'interno della colonna ASIDE, non essendo float non serve il clearfix */
+.blocco{
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 5px;
+  text-align: left;
+  border-radius: 1.5px;
+}
+
+/* seleziono tutti gli ul all'interno di elementi con la classe .blocco */
+.blocco ul {
+  margin-left: 1.5vw;
+  margin-top: 0.5vh;
+  margin-bottom: 1vw;
+}
+
+.colonnaArticoli{
+  width: 49%;
+  background-color: pink;
+  float: left;
+  margin: 0.5%;
+}
+
+/* assegno al contenitore di elementi Float "clearfix" così che non collassi */
+.colonnaArticoli:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/* questa classe gestisce gli articoli all'interno della colonnaArticoli */
+.articolo{
+  display: inline-block;
+  height: 150px;
+  width: 90%;
+  background-color: brown;
+  margin: 5px;
+}
+
+.colonnaSearchTag{
+  height: 500px;
+  width: 24%;
+  background-color: lightblue;
+  float: left;
+  margin: 0.5%;
+}
+
+.search, .ashtag{
+  display: inline-block;
+  height: 150px;
+  width: 85%;
+  background-color: ivory;
+  margin: 5px;
+}
+
+/* *******************************+** *//* ****************************+** */
+/* *******************************+* FOOTER ***************************+** */
+/* *******************************+** *//* ****************************+** */
+
+footer{
+    border: 5px solid snow;
+}
+
+/* PRIMA RIGA FOOTER */
+.risorseEWidgets{
+  height: 100px;
+  width: 100%;
+  background-color: lightblue;
+
+}
+
+/* assegno al contenitore di elementi Float "clearfix" così che non collassi */
+.risorseEWidgets:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.utilities{
+  height: 90px;
+  width: 60%;
+  background-color: orange;
+  float: left;
+  margin: 4px;
+}
+
+/* assegno al contenitore di elementi Float "clearfix" così che non collassi */
+.utilities:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.risorsa{
+  height: 85%;
+  width: 25%;
+  background-color: lavender;
+  float: left;
+  border: 1px solid yellow;
+  margin: 5px;
+}
+
+.widgets{
+  height: 90px;
+  width: 30%;
+  background-color: lime;
+  float: left;
+  border: 1px red solid;
+  margin: 5px;
+}
+
+/* SECONDA RIGA FOOTER */
+.creditiESocial{
+  height: 100px;
+  width: 100%;
+  background-color: violet;
+  margin-bottom: 20px;
+}
+
+/* assegno al contenitore di elementi Float "clearfix" così che non collassi */
+.creditiESocial:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.crediti {
+  height: 90px;
+  width: 45%;
+  background-color: white;
+  float: left;
+  margin: 5px;
+}
+
+.social {
+  height: 90px;
+  width: 45%;
+  background-color: LightSkyBlue;
+  float: left;
+  margin: 5px;
+}
