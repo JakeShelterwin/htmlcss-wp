@@ -168,7 +168,7 @@ h2 {
 }
 
 .blocco ul li {
-  padding: 2vh;
+  padding: 1vh;
 }
 
 /* *******************************+** *//* ****************************+** */
@@ -176,7 +176,7 @@ h2 {
 /* *******************************+** *//* ****************************+** */
 .colonnaArticoli{
   /* spessore totale 50% */
-  width: 45%;
+  width: 40%;
   margin-left: 2.5%;
   margin-right: 2.5%;
   background-color: white;
@@ -260,20 +260,61 @@ hr{
 /* ************************COLONNA SEARCH AND TAG*****************+** */
 /* *******************************+** *//* ****************************+** */
 .colonnaSearchTag{
-  width: 25%;
-  background-color: lightblue;
+  width: 30%;
   float: left;
+}
+
+.search{
+  padding: 1vh;
+  background-color: white;
   border-radius: 1.5px;
 }
 
-.search, .ashtag{
-  display: inline-block;
-  height: 150px;
-  width: 85%;
-  background-color: ivory;
-  margin: 5px;
+.search input{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  padding-right: 35%;
+  color: #4f4842;
+  /* distanzia dal bottone "go" */
+  margin-right: 1vw;
+  /* distanza dal bordo */
+  margin-left: 0.9vw;
+
+}
+.search button{
+  padding: 4.5%;
+  color: white;
+  background-color: #4f4842;
 }
 
+
+.ashtag{
+  margin-top: 2vh;
+  padding-top: 3%;
+  /* padding-bottom è la somma di questo padding-top e del margin top di .ashtag h3 */
+  padding-bottom: 8%;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: white;
+  border-radius: 1.5px;
+}
+
+.ashtag h3{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.elencoVariAshtag{
+  margin-left: 5%;
+  color: #99cc33;
+  font-size: 10px;
+}
+
+.elencoVariAshtag span {
+  font-size: 20px;
+}
 /* *******************************+** *//* ****************************+** */
 /* *******************************+* FOOTER ***************************+** */
 /* *******************************+** *//* ****************************+** */
@@ -292,6 +333,7 @@ footer{
   /* height: 100px; */
   width: 100%;
   /* background-color: lightblue; */
+  padding-bottom: 4.5%;
   border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
 }
 
