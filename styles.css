@@ -100,7 +100,8 @@ nav {
 }
 
 /* Suggerito da Michele, quando faccio over sulla classe "effettoOver" seleziona anche .itemNav
-Selezione gli alementi itemNav che sono figli dell'elemento effettoOver:hover  */
+Selezione gli alementi itemNav che sono figli dell'elemento effettoOver:hover.
+Durante hover seleziona l’elemento figlio itemNav  */
 .effettoHover:hover .itemNav{
   /* color si applica al link di itemNav, se non lo seleziono direttamente non si applica */
   color: white;
