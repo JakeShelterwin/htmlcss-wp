@@ -82,12 +82,13 @@ nav {
   background-color: #4f4842;
   height: 50px;
   width: 100%;
+  position: relative;
 }
 
 /* imposto la posizione centrale della barra di navigazione */
 .barraNavigazione {
   display: inline-block;
-  position: relative;
+  position: absolute;
   float: left;
   top: 50%;
   left: 50%;
